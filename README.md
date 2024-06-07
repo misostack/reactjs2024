@@ -8,3 +8,5 @@
 - Language: Typescript
 - Bundler Tool: vite
 - Test Framework: vitest
+
+## React Query
