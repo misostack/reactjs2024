@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import { Task } from "../model/task.model";
+import { Task } from "../../model/task.model";
 
 const TaskPage = (props: PropsWithChildren & { tasks: Task[] }) => {
   const { tasks } = props;

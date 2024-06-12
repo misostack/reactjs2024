@@ -29,3 +29,9 @@ GET http://localhost:1337/tasks?_page=1&_per_page=25&_sort=id,-views&views_gt=10
 ```
 
 Let's write a httpClient service to accomplish fetching data mission.
+
+## Data Validation
+
+**Parse, don't validate**
+
+- Formilk + Yup vs Form Hook + Zod

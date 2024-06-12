@@ -12,25 +12,6 @@ export const useQuery = <T>(option: UseQueryFunc) => {
     data: null,
   });
 
-  // const {pending, error, data} = useMemo<{}>(() => {
-  //   if (!state.pending) return;
-  //   queryFunc
-  //     .then((res) => {
-  //       return {
-  //         pending: false,
-  //         data: res.data as T,
-  //         error: res.error,
-  //       };
-  //     })
-  //     .catch((error) => {
-  //       return {
-  //         pending: false,
-  //         data: null,
-  //         error,
-  //       };
-  //     });
-  // }, [queryFunc])
-
   useEffect(() => {
     if (!state.pending) return;
     (queryFunc() as QueryFunctionReturnType)
