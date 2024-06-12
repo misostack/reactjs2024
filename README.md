@@ -35,3 +35,16 @@ Let's write a httpClient service to accomplish fetching data mission.
 **Parse, don't validate**
 
 - Formilk + Yup vs Form Hook + Zod
+
+```sh
+npm i react-hook-form @hookform/resolvers zod
+```
+
+## UI
+
+- https://nextui.org/docs/guide/installation
+- https://refine.dev/blog/next-ui-react-admin-panel/#how-to-set-up-nextui-in-a-refine-application
+
+```sh
+npm i @nextui-org/react framer-motion && npm install -D tailwindcss postcss autoprefixer
+```
