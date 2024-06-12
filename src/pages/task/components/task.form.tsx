@@ -14,11 +14,19 @@ export const TaskForm = (props: PropsWithChildren) => {
     register,
     handleSubmit,
     formState: { errors },
+    setError,
   } = useForm({
     resolver: zodResolver(schema),
   });
   const onSubmit = (fieldValues: FieldValues) => {
     console.log(fieldValues);
+    // test error
+    setTimeout(() => {
+      setError("title", {
+        type: "server",
+        message: "title must be unique",
+      });
+    }, 500);
   };
   return (
     <div className="container w-1/3">
